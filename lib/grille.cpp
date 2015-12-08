@@ -3,6 +3,4 @@
 namespace SudokuSolver
 {
 
-
-
-} //SudokuSolver
+} // SudokuSolver

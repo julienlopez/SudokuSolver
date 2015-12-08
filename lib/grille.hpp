@@ -5,7 +5,6 @@ namespace SudokuSolver
 
     class Grille
     {
-
     };
 
-} //SudokuSolver
+} // SudokuSolver
