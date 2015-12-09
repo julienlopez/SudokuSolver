@@ -1,7 +1,8 @@
 #include "grid.hpp"
 
-#include <cassert>
 #include <iostream>
+
+#include <GSL/gsl_assert.h>
 
 namespace SudokuSolver
 {
@@ -13,10 +14,10 @@ namespace SudokuSolver
 
     uint8_t Grid::operator()(const std::size_t x, const std::size_t y) const
     {
-        assert(x < m_size);
-        assert(y < m_size);
+        Expects(x < m_size);
+        Expects(y < m_size);
         const auto res = m_values[ y * m_size + x ];
-        assert(res < 10);
+        Ensures(res < 10);
         return res;
     }
 
